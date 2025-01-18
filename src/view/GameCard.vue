@@ -6,7 +6,6 @@
         <div class="game-card">
           <img
             :data-src="imageSrc.src"
-            :src="imageSrc.src"
             alt="Game Poster"
             class="game-poster"
             draggable="false"
