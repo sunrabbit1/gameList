@@ -2,7 +2,6 @@
   <div>
     <Navbar />
     <div id="game">
-      {{ deviceType }}
       <div class="game-list-container">
         <RouterView v-slot="{ Component }">
           <template v-if="Component">
@@ -29,33 +28,6 @@
 import { onMounted, ref } from 'vue';
 import { RouterView } from 'vue-router';
 import Navbar from './components/Navbar.vue';
-
-const isMobile = ref(false);
-const deviceType = ref('');
-
-onMounted(async () => {
-  checkDeviceType();
-});
-
-const checkDeviceType = () => {
-  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-  // 检测常见的移动设备特征
-  if (
-    /android/i.test(userAgent) ||
-    /iPad|iPhone|iPod/.test(userAgent) ||
-    /windows phone/i.test(userAgent) ||
-    /iemobile/i.test(userAgent) ||
-    /blackberry/i.test(userAgent) ||
-    /webos/i.test(userAgent)
-  ) {
-    isMobile.value = true;
-    deviceType.value = '移动设备';
-  } else {
-    isMobile.value = false;
-    deviceType.value = '桌面设备';
-  }
-};
 </script>
 
 <style>
