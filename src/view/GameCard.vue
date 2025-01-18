@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="total">总计：{{ total }}</h1>
+    <h1 class="total">目前玩过的游戏总计：{{ total }}（持续补全中...）</h1>
     <div class="game-list" v-if="imageSources.length > 0">
       <template v-for="(imageSrc, index) in imageSources" :key="index">
         <div class="game-card">
