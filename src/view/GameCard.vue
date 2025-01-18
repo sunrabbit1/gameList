@@ -4,7 +4,14 @@
     <div class="game-list" v-if="imageSources.length > 0">
       <template v-for="(imageSrc, index) in imageSources" :key="index">
         <div class="game-card">
-          <img :src="imageSrc.src" alt="Game Poster" class="game-poster" draggable="false" oncontextmenu="return false;" />
+          <img
+            :data-src="imageSrc.src"
+            :src="imageSrc.src"
+            alt="Game Poster"
+            class="game-poster"
+            draggable="false"
+            oncontextmenu="return false;"
+          />
           <div class="game-info">
             <h3>{{ imageSrc.name }}</h3>
           </div>
@@ -15,23 +22,25 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
+import { nextTick, onMounted, ref } from 'vue';
 
 const imageSources = ref([]);
 const total = ref(0);
+
 onMounted(async () => {
   try {
     let images = import.meta.glob(['@/assets/gameImg/*.jpg', '@/assets/gameImg/*.png']);
     const loadedImages = await Promise.all(
       Object.values(images).map(loader => loader().then(module => module.default))
     );
-    loadedImages.forEach(item => {
-      imageSources.value.push({
-        src: item,
-        name: getGameName(item)
-      })
-    });
+    imageSources.value = loadedImages.map(item => ({
+      src: item,
+      name: getGameName(item)
+    }));
     total.value = loadedImages.length;
+    nextTick(() => {
+      observeImages();
+    });
   } catch (error) {
     console.error('Error loading images:', error);
   }
@@ -42,14 +51,31 @@ const getGameName = (imageSrc) => {
   const fileName = imageSrc.split('/').pop();
   let name = decodeURIComponent(fileName.replace(/\.[^/.]+$/, ''));
 
-  if (name.indexOf('_')) {
+  if (name.indexOf('_') !== -1) {
     let underscoreIndex = name.indexOf('_');
-    return name.slice(underscoreIndex + 1)
+    return name.slice(underscoreIndex + 1);
   } else {
     return name;
   }
 };
 
+// 监听图片进入视口
+const observeImages = () => {
+  const images = document.querySelectorAll('.game-poster');
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src;
+        observer.unobserve(img);
+      }
+    });
+  });
+
+  images.forEach(image => {
+    observer.observe(image);
+  });
+};
 </script>
 
 <style scoped>
