@@ -21,7 +21,7 @@ const imageSources = ref([]);
 const total = ref(0);
 onMounted(async () => {
   try {
-    let images = import.meta.glob(['/public/gameImg/*.jpg', '/public/gameImg/*.png']);
+    let images = import.meta.glob(['@/assets/gameImg/*.jpg', '@/assets/gameImg/*.png']);
     const loadedImages = await Promise.all(
       Object.values(images).map(loader => loader().then(module => module.default))
     );
