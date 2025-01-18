@@ -2,6 +2,7 @@
   <div>
     <Navbar />
     <div id="game">
+      <template v-if="isAndroi">阿斯顿</template>
       <div class="game-list-container">
         <RouterView v-slot="{ Component }">
           <template v-if="Component">
@@ -35,11 +36,12 @@ onMounted(async () => {
   var isIphone = !ipad && str.match(/(iPhone\sOS)\s([\d_]+)/);
   var isAndroid = str.match(/(Android)\s+([\d.]+)/);
 
+  const isAndroi = ref(false)
   if (isIphone) {
     // 404
-    this.$router.push('/404')
   } else if (isAndroid) {
     // 404
+    isAndroi.value = true;
   }
 });
 </script>
