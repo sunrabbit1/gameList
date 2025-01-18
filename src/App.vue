@@ -2,49 +2,49 @@
   <div>
     <Navbar />
     <div id="game">
-      <h1 class="title">总计：{{ gameTotal }}</h1>
       <div class="game-list-container">
-        <Suspense>
-          <template #default>
-            <div class="game-list" v-if="imageSources.length > 0">
-              <GameCard v-for="(imageSrc, index) in imageSources" :imageSrc="imageSrc" :key="index" />
-            </div>
-            <div v-else>
-              No images found.
-            </div>
+        <RouterView v-slot="{ Component }">
+          <template v-if="Component">
+            <Transition name="fade" mode="out-in">
+              <keep-alive>
+                <Suspense>
+                  <template #default>
+                    <component :is="Component"></component>
+                  </template>
+                  <template #fallback>
+                    <div>Loading...</div>
+                  </template>
+                </Suspense>
+              </keep-alive>
+            </Transition>
           </template>
-          <template #fallback>
-            <div>Loading...</div>
-          </template>
-        </Suspense>
+        </RouterView>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
+import { RouterView } from 'vue-router';
 import Navbar from './components/Navbar.vue';
-import GameCard from './components/GameCard.vue';
-
-const imageSources = ref([]);
-const gameTotal = ref(0);
 
 onMounted(async () => {
-  try {
-    let images = import.meta.glob(['@/assets/gameImg/*.jpg', '@/assets/gameImg/*.png']);
-    const loadedImages = await Promise.all(
-      Object.values(images).map(loader => loader().then(module => module.default))
-    );
-    imageSources.value = loadedImages;
-    gameTotal.value = loadedImages.length;
-  } catch (error) {
-    console.error('Error loading images:', error);
+  var str = navigator.userAgent;
+  var ipad = str.match(/(iPad).*OS\s([\d_]+)/);
+  var isIphone = !ipad && str.match(/(iPhone\sOS)\s([\d_]+)/);
+  var isAndroid = str.match(/(Android)\s+([\d.]+)/);
+
+  if (isIphone) {
+    // 404
+    this.$router.push('/404')
+  } else if (isAndroid) {
+    // 404
   }
 });
 </script>
 
-<style scoped>
+<style>
 #game {
   display: flex;
   flex-direction: column;
@@ -56,10 +56,10 @@ onMounted(async () => {
   box-sizing: border-box;
 }
 
-.title {
+/* .title {
   margin-bottom: 20px;
   text-align: center;
-}
+} */
 
 .game-list-container {
   width: 100%;
@@ -68,10 +68,20 @@ onMounted(async () => {
   box-sizing: border-box;
 }
 
-.game-list {
+/* .game-list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+} */
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

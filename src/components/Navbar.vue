@@ -1,10 +1,11 @@
 <template>
   <nav class="navbar">
     <ul class="nav-list">
-      <li class="nav-item"><a href="#home">太</a></li>
-      <li class="nav-item"><a href="#games">难</a></li>
-      <li class="nav-item"><a href="#about">受</a></li>
-      <li class="nav-item"><a href="2.html">了</a></li>
+      <li class="nav-item"><RouterLink to="gameList">太</RouterLink></li>
+      <li class="nav-item"><RouterLink to="2024">太</RouterLink></li>
+      <li class="nav-item"><a href="">难</a></li>
+      <li class="nav-item"><a href="">受</a></li>
+      <li class="nav-item"><a href="">了</a></li>
     </ul>
   </nav>
 </template>

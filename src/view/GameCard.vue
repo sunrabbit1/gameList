@@ -1,18 +1,39 @@
 <template>
-  <div class="game-card">
-    <img :src="imageSrc" alt="Game Poster" class="game-poster" draggable="false" oncontextmenu="return false;" />
-    <div class="game-info">
-      <h3>{{ gameName }}</h3>
+  <div>
+    <h1 class="total">总计：{{ total }}</h1>
+    <div class="game-list" v-if="imageSources.length > 0">
+      <template v-for="(imageSrc, index) in imageSources" :key="index">
+        <div class="game-card">
+          <img :src="imageSrc.src" alt="Game Poster" class="game-poster" draggable="false" oncontextmenu="return false;" />
+          <div class="game-info">
+            <h3>{{ imageSrc.name }}</h3>
+          </div>
+        </div>
+      </template>
     </div>
   </div>
 </template>
 
 <script setup>
-import { defineProps, ref } from 'vue';
-const props = defineProps({
-  imageSrc: {
-    type: String,
-    required: true
+import { onMounted, ref } from 'vue';
+
+const imageSources = ref([]);
+const total = ref(0);
+onMounted(async () => {
+  try {
+    let images = import.meta.glob(['@/assets/gameImg/*.jpg', '@/assets/gameImg/*.png']);
+    const loadedImages = await Promise.all(
+      Object.values(images).map(loader => loader().then(module => module.default))
+    );
+    loadedImages.forEach(item => {
+      imageSources.value.push({
+        src: item,
+        name: getGameName(item)
+      })
+    });
+    total.value = loadedImages.length;
+  } catch (error) {
+    console.error('Error loading images:', error);
   }
 });
 
@@ -29,11 +50,21 @@ const getGameName = (imageSrc) => {
   }
 };
 
-const gameName = ref('');
-gameName.value = getGameName(props.imageSrc);
 </script>
 
 <style scoped>
+.total {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.game-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
 .game-card {
   flex: 1 1 calc(100% - 40px);
   max-width: 200px;
