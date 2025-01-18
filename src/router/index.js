@@ -35,7 +35,7 @@ router.beforeEach((to, from, next) => {
         /blackberry/i.test(userAgent) ||
         /webos/i.test(userAgent);
 
-    if (isMobile) {
+    if (isMobile && to.path !== '/mobile') {
         next({ name: 'Mobile' });
     } else {
         next();
