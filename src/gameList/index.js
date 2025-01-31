@@ -1228,5 +1228,15 @@ export const list = [
     "fileName": "image-246.jpg",
     "gameName": "最终幻想15",
     "url": "https://s2.loli.net/2025/01/31/MkQq5dmegs4UEKD.jpg"
+  },
+  {
+    "fileName": "image-247.jpg",
+    "gameName": "FEZ",
+    "url": "https://s2.loli.net/2025/01/31/rHZ4wnYCpW1laGh.jpg"
+  },
+  {
+    "fileName": "image-248.jpg",
+    "gameName": "小绵羊的朝圣之路",
+    "url": "https://s2.loli.net/2025/01/31/9QMfZlnXwkpy1tV.jpg"
   }
 ]
