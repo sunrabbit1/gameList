@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     vue()
   ],
-  base: '/gameList/',
+  base: './gameList/',
   build: {
     rollupOptions: {
       output: {
