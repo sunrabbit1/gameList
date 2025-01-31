@@ -25,7 +25,6 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
 import { RouterView } from 'vue-router';
 import Navbar from './components/Navbar.vue';
 </script>
@@ -42,24 +41,12 @@ import Navbar from './components/Navbar.vue';
   box-sizing: border-box;
 }
 
-/* .title {
-  margin-bottom: 20px;
-  text-align: center;
-} */
-
 .game-list-container {
   width: 100%;
   max-width: 1260px;
   padding: 0 15px;
   box-sizing: border-box;
 }
-
-/* .game-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-} */
 
 .fade-enter-active,
 .fade-leave-active {
