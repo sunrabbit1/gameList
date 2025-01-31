@@ -28,6 +28,12 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Clean residual artifacts
+        run: |
+          rm -rf node_modules/
+          rm -rf dist/
+          rm -rf .cache/
+
       - name: Checkout
         uses: actions/checkout@v4
 
