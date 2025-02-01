@@ -1238,5 +1238,15 @@ export const list = [
     "fileName": "image-248.jpg",
     "gameName": "小绵羊的朝圣之路",
     "url": "https://s2.loli.net/2025/01/31/9QMfZlnXwkpy1tV.jpg"
+  },
+  {
+    "fileName": "image-249.jpg",
+    "gameName": "莫莫多拉1",
+    "url": "https://s2.loli.net/2025/02/01/JUoqAsuByl3fj2N.jpg"
+  },
+  {
+    "fileName": "image-250.jpg",
+    "gameName": "莫莫多拉2",
+    "url": "https://s2.loli.net/2025/02/01/jqgLtQheyplowOz.jpg"
   }
 ]
