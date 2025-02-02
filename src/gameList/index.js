@@ -1248,5 +1248,10 @@ export const list = [
     "fileName": "image-250.jpg",
     "gameName": "莫莫多拉2",
     "url": "https://s2.loli.net/2025/02/01/jqgLtQheyplowOz.jpg"
+  },
+  {
+    "fileName": "image-251.jpg",
+    "gameName": "信使",
+    "url": "https://s2.loli.net/2025/02/02/NPJLBKf3EOtiYqF.jpg"
   }
 ]
