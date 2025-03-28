@@ -75,7 +75,6 @@ const sortLikeWin = (name1, name2) => {
   return compareValue
 }
 
-console.log(import.meta.env);
 onMounted(async () => {
   try {
     const loadedImages = list.sort((a, b) => sortLikeWin(a.gameName, b.gameName));
