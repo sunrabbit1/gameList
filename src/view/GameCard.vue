@@ -23,6 +23,9 @@
 <script setup>
 import { nextTick, onMounted, ref } from 'vue';
 import { list } from '../gameList/index';
+import ScrollReveal from 'scrollreveal';
+
+const sr = ScrollReveal();
 
 const imageSources = ref([]);
 const total = ref(0);
@@ -86,6 +89,26 @@ onMounted(async () => {
     total.value = loadedImages.length;
     nextTick(() => {
       observeImages();
+      sr.reveal('.game-card', {
+        // 动画持续时间
+        duration: 600,
+        // 移动距离
+        distance: '150px',
+        // 动画起始方向 (top, bottom, left, right)
+        origin: 'top',
+        // 初始透明度
+        opacity: 0,
+        // 缩放比例
+        scale: 0.3,
+        // 自定义缓动函数
+        easing: 'cubic-bezier(0.5, 0, 0.5, 1)',
+        // 每个元素之间的间隔时间
+        interval: 150,
+        // 是否每次进入视窗都执行动画
+        reset: false,
+        // 元素可见比例才触发动画
+        viewFactor: 0.2
+      });
     });
   } catch (error) {
     console.error('Error loading images:', error);
