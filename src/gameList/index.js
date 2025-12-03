@@ -1259,4 +1259,14 @@ export const list = [
     "gameName": "樱桃02_空洞骑士：丝之歌",
     "url": "https://s2.loli.net/2025/12/03/Wfk71RcBV9oTj4H.jpg"
   },
+  {
+    "fileName": "image-253.jpg",
+    "gameName": "Jaded",
+    "url": "https://s2.loli.net/2025/12/03/4K5NHOIUtph1vq2.jpg"
+  },
+  {
+    "fileName": "image-254.jpg",
+    "gameName": "宝开_伊特：饿了就吃",
+    "url": "https://s2.loli.net/2025/12/03/NbkXUSvtMgB6hER.jpg"
+  },
 ]
