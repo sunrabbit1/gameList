@@ -266,7 +266,7 @@ export const list = [
   },
   {
     "fileName": "image-54.jpg",
-    "gameName": "宝开_原子",
+    "gameName": "宝开_原子球",
     "url": "https://s2.loli.net/2025/01/30/8wTqaR9Esz6FgvA.jpg"
   },
   {
