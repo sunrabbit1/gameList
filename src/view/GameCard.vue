@@ -91,7 +91,7 @@ onMounted(async () => {
       observeImages();
       sr.reveal('.game-card', {
         // 动画持续时间
-        duration: 600,
+        duration: 100,
         // 移动距离
         distance: '150px',
         // 动画起始方向 (top, bottom, left, right)
@@ -103,7 +103,7 @@ onMounted(async () => {
         // 自定义缓动函数
         easing: 'cubic-bezier(0.5, 0, 0.5, 1)',
         // 每个元素之间的间隔时间
-        interval: 150,
+        interval: 80,
         // 是否每次进入视窗都执行动画
         reset: false,
         // 元素可见比例才触发动画
