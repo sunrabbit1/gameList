@@ -107,7 +107,10 @@ onMounted(async () => {
         // 是否每次进入视窗都执行动画
         reset: false,
         // 元素可见比例才触发动画
-        viewFactor: 0.2
+        viewFactor: 0.2,
+        afterReveal: (el) => {
+          sr.clean(el); // 清除元素上的 ScrollReveal 相关属性
+        },
       });
     });
   } catch (error) {
