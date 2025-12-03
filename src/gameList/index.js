@@ -536,7 +536,7 @@ export const list = [
   },
   {
     "fileName": "image-108.jpg",
-    "gameName": "空洞骑士",
+    "gameName": "樱桃01_空洞骑士",
     "url": "https://s2.loli.net/2025/01/30/ZdLvG1nFDJYstmN.jpg"
   },
   {
@@ -1253,5 +1253,10 @@ export const list = [
     "fileName": "image-251.jpg",
     "gameName": "信使",
     "url": "https://s2.loli.net/2025/02/02/NPJLBKf3EOtiYqF.jpg"
-  }
+  },
+  {
+    "fileName": "image-252.jpg",
+    "gameName": "樱桃02_空洞骑士：丝之歌",
+    "url": "https://s2.loli.net/2025/12/03/Wfk71RcBV9oTj4H.jpg"
+  },
 ]
