@@ -187,7 +187,7 @@ const observeImages = () => {
 }
 
 .game-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) !important;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
