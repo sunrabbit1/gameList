@@ -91,7 +91,7 @@ onMounted(async () => {
       observeImages();
       sr.reveal('.game-card', {
         // 动画持续时间
-        duration: 100,
+        duration: 200,
         // 移动距离
         distance: '150px',
         // 动画起始方向 (top, bottom, left, right)
@@ -107,10 +107,7 @@ onMounted(async () => {
         // 是否每次进入视窗都执行动画
         reset: false,
         // 元素可见比例才触发动画
-        viewFactor: 0.2,
-        afterReveal: (el) => {
-          sr.clean(el); // 清除元素上的 ScrollReveal 相关属性
-        },
+        viewFactor: 0.2
       });
     });
   } catch (error) {
@@ -172,7 +169,7 @@ const observeImages = () => {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
   border: 5px solid;
   background: #ffffffe6;
 }
