@@ -2,7 +2,7 @@
   <div>
     <Navbar />
     <div id="game">
-      <div class="game-list-container">
+      <div class="game-list-container mask">
         <RouterView v-slot="{ Component }">
           <template v-if="Component">
             <Transition name="fade" mode="out-in">
@@ -46,6 +46,8 @@ import Navbar from './components/Navbar.vue';
   max-width: 1260px;
   padding: 0 15px;
   box-sizing: border-box;
+  background: #ffffff1a;
+  backdrop-filter: blur(0px);
 }
 
 .fade-enter-active,
