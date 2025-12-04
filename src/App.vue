@@ -34,7 +34,7 @@ import Navbar from './components/Navbar.vue';
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   min-height: 100vh;
   padding: 20px;
   padding-top: 50px;

@@ -9,7 +9,81 @@ html {
 
 body {
   font-family: Arial, sans-serif;
-  background: url(@/assets/backImg/ttt.jpeg) no-repeat center center;
+  background: url(@/assets/backImg/2.jpg) no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
+}
+
+.total {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.game-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.game-card-reveal {
+  flex: 1 1 calc(100% - 40px);
+  max-width: 200px;
+  margin: 10px;
+}
+
+.game-card {
+  position: relative;
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  border: 5px solid;
+  background: #ffffffe6;
+}
+
+@media (min-width: 600px) {
+  .game-card-reveal  {
+    flex: 1 1 calc(50% - 40px);
+  }
+}
+
+@media (min-width: 900px) {
+  .game-card-reveal  {
+    flex: 1 1 calc(33.333% - 40px);
+  }
+}
+
+.game-card:hover {
+  transform: translateY(-10px) !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.game-poster {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  user-select: none;
+}
+
+.game-info h3 {
+  margin: 0;
+  padding: 0 12px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: 'SmileySans', Tahoma, Arial, sans-serif;
+}
+
+.game-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: calc(100% - 300px);
 }
