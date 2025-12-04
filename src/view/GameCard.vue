@@ -3,16 +3,18 @@
     <h1 class="total">目前玩过的游戏总计：{{ total }}（网游、手游、页游、红白机...还在统计）</h1>
     <div class="game-list" v-if="imageSources.length > 0">
       <template v-for="(imageSrc, index) in imageSources" :key="index">
-        <div class="game-card">
-          <img
-            :data-src="imageSrc.src"
-            alt="Game Poster"
-            class="game-poster"
-            draggable="false"
-            oncontextmenu="return false;"
-          />
-          <div class="game-info">
-            <h3>{{ imageSrc.name }}</h3>
+        <div class="game-card-reveal">
+          <div class="game-card">
+            <img
+              :data-src="imageSrc.src"
+              alt="Game Poster"
+              class="game-poster"
+              draggable="false"
+              oncontextmenu="return false;"
+            />
+            <div class="game-info">
+              <h3>{{ imageSrc.name }}</h3>
+            </div>
           </div>
         </div>
       </template>
@@ -89,9 +91,9 @@ onMounted(async () => {
     total.value = loadedImages.length;
     nextTick(() => {
       observeImages();
-      sr.reveal('.game-card', {
+      sr.reveal('.game-card-reveal', {
         // 动画持续时间
-        duration: 100,
+        duration: 200,
         // 移动距离
         distance: '150px',
         // 动画起始方向 (top, bottom, left, right)
@@ -108,8 +110,6 @@ onMounted(async () => {
         reset: false,
         // 元素可见比例才触发动画
         viewFactor: 0.2,
-        useDelay: 'once',
-        cleanup: true
       });
     });
   } catch (error) {
@@ -162,12 +162,15 @@ const observeImages = () => {
   justify-content: center;
 }
 
-.game-card {
+.game-card-reveal {
   flex: 1 1 calc(100% - 40px);
   max-width: 200px;
+  margin: 10px;
+}
+
+.game-card {
   position: relative;
   height: 350px;
-  margin: 10px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -177,13 +180,13 @@ const observeImages = () => {
 }
 
 @media (min-width: 600px) {
-  .game-card {
+  .game-card-reveal  {
     flex: 1 1 calc(50% - 40px);
   }
 }
 
 @media (min-width: 900px) {
-  .game-card {
+  .game-card-reveal  {
     flex: 1 1 calc(33.333% - 40px);
   }
 }
