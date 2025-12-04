@@ -1269,4 +1269,19 @@ export const list = [
     "gameName": "宝开_伊特：饿了就吃",
     "url": "https://s2.loli.net/2025/12/03/NbkXUSvtMgB6hER.jpg"
   },
+  {
+    "fileName": "image-255.jpg",
+    "gameName": "亡灵诡计：来世",
+    "url": "https://s2.loli.net/2025/12/04/xMuqoNzCcdRnQS3.jpg"
+  },
+  {
+    "fileName": "image-256.jpg",
+    "gameName": "生化奇兵2",
+    "url": "https://s2.loli.net/2025/12/04/7FNxtKDMpioTGwY.jpg"
+  },
+  {
+    "fileName": "image-257.jpg",
+    "gameName": "生化奇兵：无限",
+    "url": "https://s2.loli.net/2025/12/04/YD5ZCS4NIlKrb7w.jpg"
+  },
 ]
