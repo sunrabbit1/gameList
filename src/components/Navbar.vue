@@ -3,6 +3,7 @@
     <ul class="nav-list">
       <li class="nav-item"><RouterLink to="gameList">首页</RouterLink></li>
       <li class="nav-item"><RouterLink to="2024">2024年合集</RouterLink></li>
+      <!-- <li class="nav-item"><RouterLink to="2025">2025年合集</RouterLink></li> -->
       <!-- <li class="nav-item"><a href="">难</a></li>
       <li class="nav-item"><a href="">受</a></li>
       <li class="nav-item"><a href="">了</a></li> -->

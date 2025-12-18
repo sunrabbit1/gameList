@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1 class="total">2024年玩过的游戏总计：{{ total }}</h1>
-    <div class="game-2024">
+    <h1 class="total">{{ year }}年玩过的游戏总计：{{ total }}</h1>
+    <div class="game-by-year">
       <div v-for="(monthData, month) in groupedGames" :key="month" class="month-section">
         <h2 class="month-title">
           <span class="month-text">{{ month }}</span>
@@ -30,14 +30,27 @@
 </template>
 
 <script setup>
-import { nextTick, onMounted, ref } from 'vue';
-import { list } from '../gameList/index-2024';
+import { nextTick, onMounted, ref, watch } from 'vue';
+import { useRoute } from 'vue-router';
 import ScrollReveal from 'scrollreveal';
 
+const route = useRoute();
 const sr = ScrollReveal();
 
 const groupedGames = ref({});
 const total = ref(0);
+const year = ref(2024);
+
+// 根据路由参数确定年份
+const determineYear = () => {
+  if (route.name === '2024') {
+    year.value = 2024;
+  } else if (route.name === '2025') {
+    year.value = 2025;
+  } else {
+    year.value = new Date().getFullYear();
+  }
+};
 
 const sortLikeWin = (name1, name2) => {
   const regexPunc = /[\s!！#$%&(（)）,，、.。;；？@[\]^_`{}~‘’“”《》￥【】+=·…]/
@@ -87,8 +100,16 @@ const sortLikeWin = (name1, name2) => {
   return compareValue
 }
 
-onMounted(async () => {
+const loadData = async () => {
+  groupedGames.value = {};
+  total.value = 0;
   try {
+    // 动态导入对应年份的数据文件
+    let listModule;
+    listModule = await import(`../gameList/index-${year.value}.js`);
+
+    const list = listModule.list;
+
     // 按月份分组并排序
     const sortedGroupedGames = {};
     let totalCount = 0;
@@ -122,7 +143,7 @@ onMounted(async () => {
   } catch (error) {
     console.error('Error loading images:', error);
   }
-});
+};
 
 // 提取文件名并去掉扩展名
 const getGameName = (imageSrc) => {
@@ -154,6 +175,20 @@ const observeImages = () => {
     observer.observe(image);
   });
 };
+
+// 监听路由变化
+watch(
+  () => route.name,
+  () => {
+    determineYear();
+    loadData();
+  }
+);
+
+onMounted(async () => {
+  determineYear();
+  await loadData();
+});
 </script>
 
 <style scoped>

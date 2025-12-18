@@ -1,0 +1,35 @@
+export const list = {
+  '一月': [
+    {
+      "fileName": "image-75.jpg",
+      "gameName": "大头菜小子逃税记",
+      "url": "https://s2.loli.net/2025/01/30/7HBPvYSpjQ3RcDq.jpg"
+    },
+  ],
+  '二月': [
+    {
+      "fileName": "image-214.jpg",
+      "gameName": "心渊梦境",
+      "url": "https://s2.loli.net/2025/01/31/amQzZchdUL34vtj.jpg"
+    },
+    {
+      "fileName": "image-176.png",
+      "gameName": "神之天平DLC",
+      "url": "https://s2.loli.net/2025/01/30/cZ4UAt9a8soVNEQ.png"
+    }
+  ],
+  '三月': [
+    {
+      "fileName": "image-136.jpg",
+      "gameName": "女神异闻录5皇家版",
+      "url": "https://s2.loli.net/2025/01/30/TdbWicEaDOZM42Y.jpg"
+    }
+  ],
+  '四月': [
+    {
+      "fileName": "image-209.jpg",
+      "gameName": "小岛",
+      "url": "https://s2.loli.net/2025/01/31/1THc3vkxNbpaIfP.jpg"
+    }
+  ]
+};
