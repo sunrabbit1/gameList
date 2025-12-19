@@ -23,12 +23,14 @@
 </template>
 
 <script setup>
-import { nextTick, onMounted, ref } from 'vue';
+import { nextTick, onMounted, onActivated, onDeactivated, onBeforeUnmount, ref } from 'vue';
 import { list } from '../gameList/index';
 import ScrollReveal from 'scrollreveal';
 
 const sr = ScrollReveal();
-
+  
+let imageObserver = null; // 全局保存 observer
+  
 const imageSources = ref([]);
 const total = ref(0);
 
@@ -83,12 +85,12 @@ const sortLikeWin = (name1, name2) => {
 onMounted(async () => {
   try {
     const loadedImages = list.sort((a, b) => sortLikeWin(a.gameName, b.gameName));
-
     imageSources.value = loadedImages.map(item => ({
       src: item.url,
       name: getGameName(item.gameName)
     }));
     total.value = loadedImages.length;
+    
     nextTick(() => {
       observeImages();
       sr.reveal('.game-card-reveal', {
@@ -117,6 +119,27 @@ onMounted(async () => {
   }
 });
 
+// 当组件被 keep-alive 恢复时重新观察（或观察新增图片）
+onActivated(() => {
+  nextTick(() => {
+    observeImages();
+    // 刷新 ScrollReveal（如果可用）
+    if (typeof sr.sync === 'function') sr.sync();
+    else sr.reveal && sr.reveal('.game-card-reveal');
+  });
+});
+
+const disconnectObserver = () => {
+  if (imageObserver) {
+    imageObserver.disconnect();
+    imageObserver = null;
+  }
+};
+
+// 停用或卸载时断开 observer，防止内存泄漏
+onDeactivated(disconnectObserver);
+onBeforeUnmount(disconnectObserver);
+
 // 提取文件名并去掉扩展名
 const getGameName = (imageSrc) => {
   const fileName = imageSrc.split('/').pop();
@@ -133,7 +156,16 @@ const getGameName = (imageSrc) => {
 // 监听图片进入视口
 const observeImages = () => {
   const images = document.querySelectorAll('.game-poster');
-  const observer = new IntersectionObserver((entries, observer) => {
+  
+  // 如果已有 observer，直接只观察新的未加载图片
+  if (imageObserver) {
+    images.forEach(img => {
+      if (!img.src && img.dataset.src) imageObserver.observe(img);
+    });
+    return;
+  }
+  
+  imageObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const img = entry.target;
