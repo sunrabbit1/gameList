@@ -21,12 +21,12 @@ const router = createRouter({
         {
             path: '/2024',
             name: '2024',
-            component: () => import('@/view/GameByYear.vue')
+            component: () => import('@/view/Game2024.vue')
         },
         {
             path: '/2025',
             name: '2025',
-            component: () => import('@/view/GameByYear.vue')
+            component: () => import('@/view/Game2025.vue')
         }
     ]
 });

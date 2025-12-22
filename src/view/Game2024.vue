@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1 class="total">{{ year }}年玩过的游戏总计：{{ total }}</h1>
-    <div class="game-by-year">
+    <h1 class="total">2024年玩过的游戏总计：{{ total }}</h1>
+    <div class="game">
       <div v-for="(monthData, month) in groupedGames" :key="month" class="month-section">
         <h2 class="month-title">
           <span class="month-text">{{ month }}</span>
@@ -30,39 +30,17 @@
 </template>
 
 <script setup>
-import { nextTick, onMounted, ref, watch } from 'vue';
-import { useRoute } from 'vue-router';
+import { nextTick, onMounted, ref } from 'vue';
+import { list } from '../gameList/index-2024';
 import { sortLikeWin } from '../utils/sortUtils';
 import { getGameName } from '../utils/gameUtils';
 import { observeImages } from '../utils/imageUtils';
 
-const route = useRoute();
-
 const groupedGames = ref({});
 const total = ref(0);
-const year = ref(2024);
 
-// 根据路由参数确定年份
-const determineYear = () => {
-  if (route.name === '2024') {
-    year.value = 2024;
-  } else if (route.name === '2025') {
-    year.value = 2025;
-  } else {
-    year.value = new Date().getFullYear();
-  }
-};
-
-const loadData = async () => {
-  groupedGames.value = {};
-  total.value = 0;
+onMounted(async () => {
   try {
-    // 动态导入对应年份的数据文件
-    let listModule;
-    listModule = await import(`../gameList/index-${year.value}.js`);
-
-    const list = listModule.list;
-
     // 按月份分组并排序
     const sortedGroupedGames = {};
     let totalCount = 0;
@@ -84,20 +62,6 @@ const loadData = async () => {
   } catch (error) {
     console.error('Error loading images:', error);
   }
-};
-
-// 监听路由变化
-watch(
-  () => route.name,
-  () => {
-    determineYear();
-    loadData();
-  }
-);
-
-onMounted(async () => {
-  determineYear();
-  await loadData();
 });
 </script>
 
