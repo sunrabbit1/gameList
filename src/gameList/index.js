@@ -1430,132 +1430,132 @@ export const list = [
     "url": ""
   },
   {
-    "fileName": "image-288.jpg",
+    "fileName": "image-287.jpg",
     "gameName": "奥咕与秘密森林",
     "url": ""
   },
   {
-    "fileName": "image-290.jpg",
+    "fileName": "image-288.jpg",
     "gameName": "Happy Game",
     "url": ""
   },
   {
-    "fileName": "image-291.jpg",
+    "fileName": "image-289.jpg",
     "gameName": "嗜血印",
     "url": ""
   },
   {
-    "fileName": "image-292.jpg",
+    "fileName": "image-290.jpg",
     "gameName": "超级忍者：反攻的斩击DEMO",
     "url": ""
   },
   {
-    "fileName": "image-293.jpg",
+    "fileName": "image-291.jpg",
     "gameName": "朝圣者",
     "url": ""
   },
   {
-    "fileName": "image-294.jpg",
+    "fileName": "image-292.jpg",
     "gameName": "涩1_夏日狂想曲",
     "url": ""
   },
   {
-    "fileName": "image-295.jpg",
+    "fileName": "image-293.jpg",
     "gameName": "隐藏的家伙",
     "url": ""
   },
   {
-    "fileName": "image-296.jpg",
+    "fileName": "image-294.jpg",
     "gameName": "波动2",
     "url": ""
   },
   {
-    "fileName": "image-297.jpg",
+    "fileName": "image-295.jpg",
     "gameName": "尤卡莱利与无妄巢穴",
     "url": ""
   },
   {
-    "fileName": "image-298.jpg",
+    "fileName": "image-296.jpg",
     "gameName": "涩2_冬日狂想曲",
     "url": ""
   },
   {
-    "fileName": "image-299.jpg",
+    "fileName": "image-297.jpg",
     "gameName": "碧琪公主：表演时刻",
     "url": ""
   },
   {
-    "fileName": "image-300.jpg",
+    "fileName": "image-298.jpg",
     "gameName": "密特罗德：生存恐惧",
     "url": ""
   },
   {
-    "fileName": "image-301.jpg",
+    "fileName": "image-299.jpg",
     "gameName": "Öoo",
     "url": ""
   },
   {
-    "fileName": "image-302.jpg",
+    "fileName": "image-300.jpg",
     "gameName": "我的朋友佩德罗",
     "url": ""
   },
   {
-    "fileName": "image-303.jpg",
+    "fileName": "image-301.jpg",
     "gameName": "小丑牌",
     "url": ""
   },
   {
-    "fileName": "image-304.jpg",
+    "fileName": "image-302.jpg",
     "gameName": "星界战士",
     "url": ""
   },
   {
-    "fileName": "image-305.jpg",
+    "fileName": "image-303.jpg",
     "gameName": "BALL x PIT",
     "url": ""
   },
   {
-    "fileName": "image-307.jpg",
+    "fileName": "image-304.jpg",
     "gameName": "红眼露比DEMO",
     "url": ""
   },
   {
-    "fileName": "image-308.jpg",
+    "fileName": "image-305.jpg",
     "gameName": "逃离鸭科夫",
     "url": ""
   },
   {
-    "fileName": "image-309.jpg",
+    "fileName": "image-306.jpg",
     "gameName": "吸血鬼幸存者",
     "url": ""
   },
   {
-    "fileName": "image-310.jpg",
+    "fileName": "image-307.jpg",
     "gameName": "忍者龙剑传4",
     "url": ""
   },
   {
-    "fileName": "image-312.jpg",
+    "fileName": "image-308.jpg",
     "gameName": "九日",
     "url": ""
   },
   {
-    "fileName": "image-313.jpg",
+    "fileName": "image-309.jpg",
     "gameName": "重力回路",
     "url": ""
   },
   {
-    "fileName": "image-314.jpg",
+    "fileName": "image-310.jpg",
     "gameName": "The First Tree",
     "url": ""
   },
   {
-    "fileName": "image-315.jpg",
+    "fileName": "image-311.jpg",
     "gameName": "纪念碑谷2",
     "url": ""
   },
   {
-    "fileName": "image-316.jpg",
+    "fileName": "image-312.jpg",
     "gameName": "任_路易吉洋馆2HD",
     "url": ""
   }
