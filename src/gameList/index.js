@@ -466,12 +466,12 @@ export const list = [
   },
   {
     "fileName": "image-94.jpg",
-    "gameName": "怪物猎人：崛起",
+    "gameName": "卡普空02_怪物猎人：崛起",
     "url": "https://s2.loli.net/2025/01/30/xh4WEvlZIF6Xk5K.jpg"
   },
   {
     "fileName": "image-95.jpg",
-    "gameName": "怪物猎人：世界",
+    "gameName": "卡普空01_怪物猎人：世界",
     "url": "https://s2.loli.net/2025/01/30/4cJgr1zWHn7vDR6.jpg"
   },
   {
@@ -481,7 +481,7 @@ export const list = [
   },
   {
     "fileName": "image-97.jpg",
-    "gameName": "鬼泣5",
+    "gameName": "卡普空04_鬼泣5",
     "url": "https://s2.loli.net/2025/01/30/PlFUAVhoy4EjetX.jpg"
   },
   {
@@ -1296,7 +1296,7 @@ export const list = [
   },
   {
     "fileName": "image-260.jpg",
-    "gameName": "怪物猎人：荒野DEMO",
+    "gameName": "卡普空03_怪物猎人：荒野DEMO",
     "url": "https://s2.loli.net/2026/01/05/GOvSm7UoNPKDy2M.jpg"
   },
   {
@@ -1421,7 +1421,7 @@ export const list = [
   },
   {
     "fileName": "image-285.jpg",
-    "gameName": "DmC鬼泣",
+    "gameName": "卡普空05_DmC鬼泣",
     "url": "https://s2.loli.net/2026/01/06/gezl87xTwLY5tRp.jpg"
   },
   {
@@ -1552,7 +1552,7 @@ export const list = [
   {
     "fileName": "image-311.jpg",
     "gameName": "纪念碑谷2",
-    "url": "https://s2.loli.net/2026/01/07/6l3GqPvckig5mpY.jpg"
+    "url": "https://s2.loli.net/2026/01/07/PNRhLzqsmrniFHl.jpg"
   },
   {
     "fileName": "image-312.jpg",
