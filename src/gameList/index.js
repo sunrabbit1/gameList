@@ -1527,36 +1527,36 @@ export const list = [
   {
     "fileName": "image-306.jpg",
     "gameName": "吸血鬼幸存者",
-    "url": ""
+    "url": "https://s2.loli.net/2026/01/07/3EotOvFhVPZA76g.jpg"
   },
   {
     "fileName": "image-307.jpg",
     "gameName": "忍者龙剑传4",
-    "url": ""
+    "url": "https://s2.loli.net/2026/01/07/zLgMPbhRYt2VTNp.jpg"
   },
   {
     "fileName": "image-308.jpg",
     "gameName": "九日",
-    "url": ""
+    "url": "https://s2.loli.net/2026/01/07/BpqdwHIncWLVJuS.jpg"
   },
   {
     "fileName": "image-309.jpg",
     "gameName": "重力回路",
-    "url": ""
+    "url": "https://s2.loli.net/2026/01/07/Lson4wr18ifHCAm.jpg"
   },
   {
     "fileName": "image-310.jpg",
     "gameName": "The First Tree",
-    "url": ""
+    "url": "https://s2.loli.net/2026/01/07/wGdZHIeNCcyYSqX.jpg"
   },
   {
     "fileName": "image-311.jpg",
     "gameName": "纪念碑谷2",
-    "url": ""
+    "url": "https://s2.loli.net/2026/01/07/6l3GqPvckig5mpY.jpg"
   },
   {
     "fileName": "image-312.jpg",
     "gameName": "任_路易吉洋馆2HD",
-    "url": ""
-  }
+    "url": "https://s2.loli.net/2026/01/07/CcsQbzR93lIXGaS.jpg"
+  },
 ]
