@@ -1552,11 +1552,101 @@ export const list = [
   {
     "fileName": "image-311.jpg",
     "gameName": "纪念碑谷2",
-    "url": "https://s2.loli.net/2026/01/07/PNRhLzqsmrniFHl.jpg"
+    "url": "https://s2.loli.net/2026/01/07/S14V6e8CPbtnfdp.jpg"
   },
   {
     "fileName": "image-312.jpg",
     "gameName": "任_路易吉洋馆2HD",
     "url": "https://s2.loli.net/2026/01/07/CcsQbzR93lIXGaS.jpg"
+  },
+  {
+    "fileName": "image-313.jpg",
+    "gameName": "Figment",
+    "url": "https://s2.loli.net/2026/01/07/fVNGqBt7vMlizZy.jpg"
+  },
+  {
+    "fileName": "image-314.jpg",
+    "gameName": "Ato",
+    "url": "https://s2.loli.net/2026/01/07/6m4IY8Qdcn92l7A.jpg"
+  },
+  {
+    "fileName": "image-315.jpg",
+    "gameName": "小小星球大碰撞",
+    "url": "https://s2.loli.net/2026/01/07/ohsagrF3V7GzIbH.jpg"
+  },
+  {
+    "fileName": "image-316.jpg",
+    "gameName": "Monaco: What's Yours Is Mine",
+    "url": "https://s2.loli.net/2026/01/07/sJ5eFP2ywKMCNuX.jpg"
+  },
+  {
+    "fileName": "image-317.jpg",
+    "gameName": "合金弹头",
+    "url": "https://s2.loli.net/2026/01/07/b9T8yZHPClogWXj.jpg"
+  },
+  {
+    "fileName": "image-318.jpg",
+    "gameName": "合金弹头X",
+    "url": "https://s2.loli.net/2026/01/07/SDyh36nqvuAUcmz.jpg"
+  },
+  {
+    "fileName": "image-319.jpg",
+    "gameName": "合金弹头2",
+    "url": "https://s2.loli.net/2026/01/07/M8lNncYFktXDzmA.jpg"
+  },
+  {
+    "fileName": "image-320.jpg",
+    "gameName": "合金弹头3",
+    "url": "https://s2.loli.net/2026/01/07/GIXKEsAbkCa3wN2.jpg"
+  },
+  {
+    "fileName": "image-321.jpg",
+    "gameName": "合金弹头4",
+    "url": "https://s2.loli.net/2026/01/07/iEqgmbndjKyALpJ.jpg"
+  },
+  {
+    "fileName": "image-322.jpg",
+    "gameName": "合金弹头5",
+    "url": "https://s2.loli.net/2026/01/07/UySl8xjWVaTwi9p.jpg"
+  },
+  {
+    "fileName": "image-323.jpg",
+    "gameName": "纪念碑谷1",
+    "url": "https://s2.loli.net/2026/01/07/dVLkObmv7yclUDj.jpg"
+  },
+  {
+    "fileName": "image-324.jpg",
+    "gameName": "愤怒的小鸟",
+    "url": "https://s2.loli.net/2026/01/07/j7rBCaitXkbVY95.jpg"
+  },
+  {
+    "fileName": "image-325.jpg",
+    "gameName": "愤怒的小鸟里约版",
+    "url": "https://s2.loli.net/2026/01/07/YpWz3kgnf56lRFD.jpg"
+  },
+  {
+    "fileName": "image-326.jpg",
+    "gameName": "愤怒的小鸟季节版",
+    "url": "https://s2.loli.net/2026/01/07/72pLTIAsiuSXKJl.jpg"
+  },
+  {
+    "fileName": "image-327.jpg",
+    "gameName": "愤怒的小鸟太空版",
+    "url": "https://s2.loli.net/2026/01/07/spzwe6qtXWyxLYR.jpg"
+  },
+  {
+    "fileName": "image-328.jpg",
+    "gameName": "愤怒的小鸟星球大战版",
+    "url": "https://s2.loli.net/2026/01/07/L74BOfxsV9vGZcP.jpg"
+  },
+  {
+    "fileName": "image-329.jpg",
+    "gameName": "愤怒的小鸟星球大战版2",
+    "url": "https://s2.loli.net/2026/01/07/uaVeQG7LEoiAZHO.jpg"
+  },
+  {
+    "fileName": "image-330.jpg",
+    "gameName": "迷你忍者",
+    "url": "https://s2.loli.net/2026/01/07/oi9uEbfk7ZAy45n.jpg"
   },
 ]

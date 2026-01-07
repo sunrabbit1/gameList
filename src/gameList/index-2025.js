@@ -570,7 +570,7 @@ export const list = {
     {
       "fileName": "image-311.jpg",
       "gameName": "纪念碑谷2",
-      "url": "https://s2.loli.net/2026/01/07/PNRhLzqsmrniFHl.jpg"
+      "url": "https://s2.loli.net/2026/01/07/S14V6e8CPbtnfdp.jpg"
     },
     {
       "fileName": "image-312.jpg",
