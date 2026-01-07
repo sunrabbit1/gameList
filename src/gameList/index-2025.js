@@ -100,7 +100,7 @@ export const list = {
     {
       "fileName": "image-259.jpg",
       "gameName": "遗迹：灰烬重生",
-      "url": "https://s2.loli.net/2026/01/05/tpQbouXPI4CrqSx.jpg"
+      "url": "https://s2.loli.net/2026/01/05/r165PmliYJfRB3E.jpg"
     },
     {
       "fileName": "image-260.jpg",
