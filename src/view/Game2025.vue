@@ -43,18 +43,22 @@ onMounted(async () => {
   try {
     // 按月份分组并排序
     const sortedGroupedGames = {};
-    let totalCount = 0;
+    let allUniqueGames = new Set();
 
     // 遍历每个月份的数据
     Object.keys(list).forEach(month => {
       // 对每个月的游戏按名称排序
       const sortedGames = list[month].sort((a, b) => sortLikeWin(a.gameName, b.gameName));
       sortedGroupedGames[month] = sortedGames;
-      totalCount += sortedGames.length;
+
+      // 将游戏名称添加到Set中，自动去重
+      sortedGames.forEach(game => {
+        allUniqueGames.add(game.gameName);
+      });
     });
 
     groupedGames.value = sortedGroupedGames;
-    total.value = totalCount;
+    total.value = allUniqueGames.size;
 
     nextTick(() => {
       observeImages();
