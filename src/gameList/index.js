@@ -1241,12 +1241,12 @@ export const list = [
   },
   {
     "fileName": "image-249.jpg",
-    "gameName": "莫莫多拉1",
+    "gameName": "莫01_莫莫多拉1",
     "url": "https://s2.loli.net/2025/02/01/JUoqAsuByl3fj2N.jpg"
   },
   {
     "fileName": "image-250.jpg",
-    "gameName": "莫莫多拉2",
+    "gameName": "莫02_莫莫多拉2",
     "url": "https://s2.loli.net/2025/02/01/jqgLtQheyplowOz.jpg"
   },
   {
@@ -1648,5 +1648,20 @@ export const list = [
     "fileName": "image-330.jpg",
     "gameName": "迷你忍者",
     "url": "https://s2.loli.net/2026/01/07/oi9uEbfk7ZAy45n.jpg"
+  },
+  {
+    "fileName": "image-331jpg",
+    "gameName": "安东大爆炸",
+    "url": "https://s2.loli.net/2026/01/10/buxtVQcn25OIM1y.jpg"
+  },
+  {
+    "fileName": "image-332.jpg",
+    "gameName": "莫03_莫莫多拉：月下遐想",
+    "url": "https://s2.loli.net/2026/01/10/pzIlAaUJiqWwbO8.jpg"
+  },
+  {
+    "fileName": "image-333.jpg",
+    "gameName": "奈米使徒计划",
+    "url": "https://s2.loli.net/2026/01/10/KGBrwhTzqdtpgsI.jpg"
   },
 ]
