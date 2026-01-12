@@ -1664,4 +1664,9 @@ export const list = [
     "gameName": "奈米使徒计划",
     "url": "https://s2.loli.net/2026/01/10/KGBrwhTzqdtpgsI.jpg"
   },
+  {
+    "fileName": "image-334.jpg",
+    "gameName": "莫04_莫莫多拉：月下告别",
+    "url": "https://s2.loli.net/2026/01/12/ejX1uNqRbxOmC32.jpg"
+  },
 ]
