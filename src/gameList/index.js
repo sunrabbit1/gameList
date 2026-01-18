@@ -1669,4 +1669,9 @@ export const list = [
     "gameName": "莫04_莫莫多拉：月下告别",
     "url": "https://s2.loli.net/2026/01/12/ejX1uNqRbxOmC32.jpg"
   },
+  {
+    "fileName": "image-335.jpg",
+    "gameName": "Transistor",
+    "url": "https://s2.loli.net/2026/01/18/qDnsz1YrBlxL3cN.jpg"
+  },
 ]
