@@ -1674,4 +1674,9 @@ export const list = [
     "gameName": "Transistor",
     "url": "https://s2.loli.net/2026/01/18/qDnsz1YrBlxL3cN.jpg"
   },
+  {
+    "fileName": "image-336.jpg",
+    "gameName": "TEVI",
+    "url": "https://s2.loli.net/2026/01/21/RMUE17HuWa62FJv.jpg"
+  },
 ]
