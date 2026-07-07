@@ -7,12 +7,17 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+.env
+.env.local
+.env.*.local
+
 node_modules
 .DS_Store
 dist
 dist-ssr
 coverage
 *.local
+.superpowers/
 
 /cypress/videos/
 /cypress/screenshots/
@@ -26,5 +31,6 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+*.swp
 
 *.tsbuildinfo

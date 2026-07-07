@@ -1,31 +1,25 @@
-import { fileURLToPath, URL } from 'node:url';
-
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
+import AutoImport from 'unplugin-auto-import/vite';
+import Components from 'unplugin-vue-components/vite';
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
 
-// https://vite.dev/config/
+// GitHub Pages 项目页 base 路径；本地开发时不生效
+const base = process.env.GITHUB_PAGES ? '/game-library/' : '/';
+
 export default defineConfig({
+  base,
   plugins: [
-    vue()
+    vue(),
+    AutoImport({
+      resolvers: [ElementPlusResolver()],
+    }),
+    Components({
+      resolvers: [ElementPlusResolver()],
+    }),
   ],
-  base: './',
-  build: {
-    rollupOptions: {
-      output: {
-        // 移除图片和字体等资源的哈希值
-        // assetFileNames: '[name][extname]'
-        assetFileNames: (assetInfo) => {
-            if (assetInfo.name && /\.(png|jpe?g|gif|svg)$/.test(assetInfo.name)) {
-              return `assets/[name][extname]`; // 仅适用于图片文件
-            }
-            return '[name]-[hash][extname]'; // 其他资源保持哈希
-          }
-      }
-    }
+  server: {
+    host: '0.0.0.0',
+    port: 5173,
   },
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    },
-  }
 });
