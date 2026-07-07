@@ -5,7 +5,7 @@ import Components from 'unplugin-vue-components/vite';
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
 
 // GitHub Pages 项目页 base 路径；本地开发时不生效
-const base = process.env.GITHUB_PAGES ? '/game-library/' : './';
+const base = process.env.GITHUB_PAGES ? '/gameList/' : './';
 
 export default defineConfig({
   base,
