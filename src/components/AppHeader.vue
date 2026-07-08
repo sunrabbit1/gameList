@@ -1,6 +1,4 @@
 <script setup>
-import { computed } from 'vue';
-
 const props = defineProps({
   years: { type: Array, required: true },        // 数字数组（降序）
   activeYear: { type: [String, Number], default: 'all' },
@@ -8,24 +6,31 @@ const props = defineProps({
 
 const emit = defineEmits(['update:activeYear']);
 
-// el-tabs 的 modelValue 用字符串；内部用 'all' 或数字转字符串
-const tabValue = computed({
-  get: () => String(props.activeYear),
-  set: (v) => emit('update:activeYear', v === 'all' ? 'all' : Number(v)),
-});
+// 全部游戏 + 各年份合集：组合成 [{ key, label }]
+const tabs = (props) => [
+  { key: 'all', label: '全部游戏' },
+  ...props.years.map((y) => ({ key: String(y), label: `${y} 年合集` })),
+];
+
+function select(key) {
+  emit('update:activeYear', key === 'all' ? 'all' : Number(key));
+}
 </script>
 
 <template>
   <header class="app-header">
-    <el-tabs v-model="tabValue" class="year-tabs">
-      <el-tab-pane label="全部游戏" name="all" />
-      <el-tab-pane
-        v-for="y in years"
-        :key="y"
-        :label="`${y} 年合集`"
-        :name="String(y)"
-      />
-    </el-tabs>
+    <nav class="year-nav">
+      <button
+        v-for="t in tabs(props)"
+        :key="t.key"
+        type="button"
+        class="tab-item"
+        :class="{ active: String(activeYear) === t.key }"
+        @click="select(t.key)"
+      >
+        {{ t.label }}
+      </button>
+    </nav>
   </header>
 </template>
 
@@ -36,36 +41,28 @@ const tabValue = computed({
   z-index: 100;
   background: #1a1a2e;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  text-align: center;  /* 让 el-tabs 内部居中 */
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  height: 60px;                    /* 固定高度 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
-/* 让 tabs 容器居中 */
-.app-header :deep(.el-tabs__header) {
-  margin: 0 auto;
-  display: table;  /* shrink-wrap 后可被 text-align center 居中 */
+.year-nav {
+  display: flex;                  /* 横向排列 */
+  align-items: center;
+  gap: 0;
+  padding: 0 40px;
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
 }
-.app-header :deep(.el-tabs__header),
-.app-header :deep(.el-tabs__nav-wrap),
-.app-header :deep(.el-tabs__nav) {
+.year-nav::-webkit-scrollbar { display: none; }
+
+.tab-item {
+  flex-shrink: 0;
   background: transparent;
   border: none;
-}
-/* 去掉整条灰线下划线 */
-.app-header :deep(.el-tabs__nav-wrap::after) {
-  display: none;
-}
-/* 去掉选中状态下划线 */
-.app-header :deep(.el-tabs__active-bar) {
-  display: none;
-}
-.year-tabs {
-  width: auto;
-  display: inline-block;
-  padding: 0 40px;
-  background: transparent;
-}
-/* 加大 tab 标签：字号 / 内边距 / 行高 */
-.app-header :deep(.el-tabs__item) {
   font-size: 20px;
   font-weight: 600;
   padding: 0 32px;
@@ -73,18 +70,16 @@ const tabValue = computed({
   line-height: 60px;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: color 0.2s;
 }
-.app-header :deep(.el-tabs__item:hover) {
-  color: #fff;
-}
-.app-header :deep(.el-tabs__item.is-active) {
-  color: #fff;
-}
+.tab-item:hover { color: #fff; }
+.tab-item.active { color: #fff; }
+
 @media (max-width: 600px) {
-  .year-tabs {
-    padding: 0 12px;
-  }
-  .app-header :deep(.el-tabs__item) {
+  .app-header { height: 48px; }
+  .year-nav { padding: 0 12px; }
+  .tab-item {
     font-size: 16px;
     font-weight: 600;
     padding: 0 14px;
