@@ -194,10 +194,10 @@ const countByYear = computed(() => {
   margin: 0 auto;
   padding: 16px 40px;
   display: block;
-  /* background: rgba(255, 255, 255, 0.48);
+  background: rgba(255, 255, 255, 0.78);  /* 半透明白色蒙版，背景图可透出 */
   border-radius: 8px;
   margin-top: 16px;
-  margin-bottom: 24px; */
+  margin-bottom: 24px;
 }
 @media (max-width: 600px) {
   .app-main {
@@ -208,23 +208,30 @@ const countByYear = computed(() => {
   padding: 60px 0;
   text-align: center;
 }
-/* panels 容器：display:grid 1/1 堆叠所有面板，高度 = max(各 panel) 始终稳定 */
+/* panels 容器：grid 1/1 堆叠所有面板。
+   非激活面板 visibility:hidden + position:absolute 脱离布局，
+   容器高度 = 激活面板自身高度（不再被最长的全部游戏 tab 撑高） */
 .panels {
   display: grid;
 }
 .tab-panel {
   grid-area: 1 / 1;
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
   transition: opacity 0.25s ease;
+  min-width: 0;
 }
 .tab-panel.active {
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
+  position: relative;             /* 参与 .panels 网格高度计算 */
 }
 .count-title {
   text-align: center;
   font-weight: 700;
+  font-size: 24px;
   margin: 24px 0 20px;
   color: #303133;
   letter-spacing: 1px;
