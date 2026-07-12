@@ -1,7 +1,7 @@
 /* 全局样式 */
 body {
   margin: 0;
-  background: #f5f5f5 url('/images/2.jpg') center center / cover no-repeat fixed;
+  background: #f5f5f5 url('https://i.ibb.co/8LfSwt7z/2.jpg') center center / cover no-repeat fixed;
   background-attachment: fixed;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
     'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
