@@ -1,4 +1,8 @@
 <script setup>
+import UploadGame from './UploadGame.vue'
+
+const isDev = import.meta.env.DEV
+
 const props = defineProps({
   years: { type: Array, required: true },        // 数字数组（降序）
   activeYear: { type: [String, Number], default: 'all' },
@@ -19,6 +23,8 @@ function select(key) {
 
 <template>
   <header class="app-header">
+    <!-- 只在开发环境显示上传按钮 -->
+    <UploadGame v-if="isDev" class="upload-btn" />
     <nav class="year-nav">
       <button
         v-for="t in tabs(props)"
@@ -47,6 +53,13 @@ function select(key) {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+.upload-btn {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
 }
 .year-nav {
   display: flex;                  /* 横向排列 */

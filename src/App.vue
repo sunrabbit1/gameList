@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed, provide } from 'vue';
 import { useGames } from './composables/useGames.js';
 import AppHeader from './components/AppHeader.vue';
 import SearchBar from './components/SearchBar.vue';
@@ -7,12 +7,14 @@ import GameGrid from './components/GameGrid.vue';
 import MonthSection from './components/MonthSection.vue';
 import { ElAlert, ElButton } from 'element-plus';
 
+
 // 全局状态
 const activeYear = ref('all');
 const searchQuery = ref('');
 
 // 数据加载
 const { games, loading, error, years, reload } = useGames();
+provide('reload', reload)   // 注入 reload，子组件可 inject
 
 // 识别 DLC / DEMO 后缀的游戏：有本体时隐藏衍生版
 const DLC_DEMO_SUFFIX = /(DLC|DEMO)$/;

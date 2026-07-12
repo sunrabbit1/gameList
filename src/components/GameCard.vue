@@ -35,7 +35,7 @@ function onError() {
       :class="{ loaded: isLoaded }"
     />
 
-    <div class="name" :title="game.name">{{ game.name }}</div>
+    <div class="name">{{ game.name }}</div>
   </div>
 </template>
 
@@ -98,7 +98,7 @@ function onError() {
   }
 }
 .game-card .name {
-  height: 36px;
+  height: 50px;
   padding: 6px 8px;
   font-size: 18px;
   font-weight: bold;
@@ -107,9 +107,9 @@ function onError() {
   display: flex;
   align-items: center;       /* 垂直居中 */
   justify-content: center;   /* 水平居中 */
-  overflow: hidden;
+  /* overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: nowrap; */
   border-top: 1px solid #eee;
   color: #303133;
   font-family: 'Smiley Sans', -apple-system, BlinkMacSystemFont,
