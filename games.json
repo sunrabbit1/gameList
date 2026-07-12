@@ -690,11 +690,11 @@
     },
     {
       "id": "image-268.jpg__2025-4",
-      "name": "热血少女",
+      "name": "热血少女1",
       "cover": "https://i.ibb.co/XZgr313k/image.jpg",
       "year": 2025,
       "month": 4,
-      "studio": "热血少女"
+      "studio": "热血少女1"
     },
     {
       "id": "image-269.jpg__2025-4",
@@ -2318,7 +2318,7 @@
       "cover": "https://i.ibb.co/7tgtrwKP/image.png",
       "year": null,
       "month": null,
-      "studio": "终结的百合花：骑士们的救赎"
+      "studio": "终焉01_终结的百合花：骑士们的救赎"
     },
     {
       "id": "image-244.jpg__unknown",
@@ -2428,16 +2428,16 @@
       "id": "image-313.jpg__unknown",
       "name": "Figment",
       "cover": "https://i.ibb.co/TD6FHy0H/Figment.jpg",
-      "year": null,
-      "month": null,
+      "year": 2026,
+      "month": 1,
       "studio": "Figment"
     },
     {
       "id": "image-314.jpg__unknown",
       "name": "Ato",
       "cover": "https://i.ibb.co/wZG9yWrg/Ato.jpg",
-      "year": null,
-      "month": null,
+      "year": 2026,
+      "month": 1,
       "studio": "Ato"
     },
     {
@@ -2588,48 +2588,48 @@
       "id": "image-331jpg__unknown",
       "name": "安东大爆炸",
       "cover": "https://i.ibb.co/kV779dXK/image.jpg",
-      "year": null,
-      "month": null,
+      "year": 2026,
+      "month": 1,
       "studio": "安东大爆炸"
     },
     {
       "id": "image-332.jpg__unknown",
       "name": "莫莫多拉：月下遐想",
       "cover": "https://i.ibb.co/zTvSnTyn/image.jpg",
-      "year": null,
-      "month": null,
+      "year": 2026,
+      "month": 1,
       "studio": "莫03"
     },
     {
       "id": "image-333.jpg__unknown",
       "name": "奈米使徒计划",
       "cover": "https://i.ibb.co/JRJx25yp/image.jpg",
-      "year": null,
-      "month": null,
+      "year": 2026,
+      "month": 1,
       "studio": "奈米使徒计划"
     },
     {
       "id": "image-334.jpg__unknown",
       "name": "莫莫多拉：月下告别",
       "cover": "https://i.ibb.co/R4pQ4dtM/image.jpg",
-      "year": null,
-      "month": null,
+      "year": 2026,
+      "month": 1,
       "studio": "莫04"
     },
     {
       "id": "image-335.jpg__unknown",
       "name": "Transistor",
       "cover": "https://i.ibb.co/spNxd7GS/Transistor.jpg",
-      "year": null,
-      "month": null,
+      "year": 2026,
+      "month": 1,
       "studio": "Transistor"
     },
     {
       "id": "image-336.jpg__unknown",
       "name": "TEVI",
       "cover": "https://i.ibb.co/B5vQ6dH8/TEVI.jpg",
-      "year": null,
-      "month": null,
+      "year": 2026,
+      "month": 1,
       "studio": "TEVI"
     },
     {
@@ -2922,19 +2922,19 @@
     },
     {
       "id": "image-68.jpg__unknown",
-      "name": "超级肉食男孩",
+      "name": "超级肉肉男孩",
       "cover": "https://i.ibb.co/Tx8bq6bh/image.jpg",
       "year": null,
       "month": null,
-      "studio": "超级肉食男孩"
+      "studio": "超级肉肉男孩"
     },
     {
       "id": "image-69.jpg__unknown",
-      "name": "超级肉食男孩：永无止境",
+      "name": "超级肉肉男孩：永无止境",
       "cover": "https://i.ibb.co/MyrD4xBw/image.jpg",
       "year": null,
       "month": null,
-      "studio": "超级肉食男孩：永无止境"
+      "studio": "超级肉肉男孩：永无止境"
     },
     {
       "id": "image-7.png__unknown",
@@ -3103,6 +3103,278 @@
       "year": null,
       "month": null,
       "studio": "哈迪斯"
+    },
+    {
+      "id": "image-303.jpg__2025-10",
+      "name": "BALL x PIT",
+      "cover": "https://i.ibb.co/GvW3xVCv/BALL-x-PIT.jpg",
+      "year": 2026,
+      "month": 1,
+      "studio": "BALL x PIT"
+    },
+    {
+      "id": "image-1783843368028.jpg__2026-2",
+      "name": "皮皮蝠与诅咒悠悠球",
+      "cover": "https://i.ibb.co/JWxBtfbm/image.jpg",
+      "year": 2026,
+      "month": 2,
+      "studio": "皮皮蝠与诅咒悠悠球"
+    },
+    {
+      "id": "image-1783844098467.jpg__2026-2",
+      "name": "DECLINE'S DROPS",
+      "cover": "https://i.ibb.co/ytzY3yN/DECLINE-S-DROPS.jpg",
+      "year": 2026,
+      "month": 2,
+      "studio": "DECLINE'S DROPS"
+    },
+    {
+      "id": "image-65.jpg__2024-1",
+      "name": "苍翼：混沌效应",
+      "cover": "https://i.ibb.co/cSMdcxqq/image.jpg",
+      "year": 2026,
+      "month": 2,
+      "studio": "苍翼：混沌效应"
+    },
+    {
+      "id": "image-1783844323343.jpg__2026-2",
+      "name": "终焉之玛格诺利亚：雾中盛放之花",
+      "cover": "https://i.ibb.co/MytyKn5J/image.jpg",
+      "year": 2026,
+      "month": 2,
+      "studio": "终焉02_终焉之玛格诺利亚：雾中盛放之花"
+    },
+    {
+      "id": "image-145.jpg__unknown",
+      "name": "仁王1",
+      "cover": "https://i.ibb.co/6cF0GFTg/1.jpg",
+      "year": 2026,
+      "month": 2,
+      "studio": "仁王1"
+    },
+    {
+      "id": "image-1783844916392.jpg__2026-3",
+      "name": "忍者龙剑传4",
+      "cover": "https://i.ibb.co/8D2yn0Rp/4.jpg",
+      "year": 2026,
+      "month": 3,
+      "studio": "忍者龙剑传4"
+    },
+    {
+      "id": "image-1783844996563.jpg__2026-3",
+      "name": "大头菜小子抢银行",
+      "cover": "https://i.ibb.co/BVM5Fq9L/image.jpg",
+      "year": 2026,
+      "month": 3,
+      "studio": "大头菜小子抢银行"
+    },
+    {
+      "id": "image-269.jpg__2025-4",
+      "name": "无限机兵DLC",
+      "cover": "https://i.ibb.co/QFtJQ2d0/image.jpg",
+      "year": 2026,
+      "month": 3,
+      "studio": "无限机兵"
+    },
+    {
+      "id": "image-97.jpg__2025-7",
+      "name": "鬼泣5",
+      "cover": "https://i.ibb.co/7t22j6kg/5.jpg",
+      "year": 2026,
+      "month": 3,
+      "studio": "卡普空04"
+    },
+    {
+      "id": "image-97.jpg__2025-7",
+      "name": "鬼泣5",
+      "cover": "https://i.ibb.co/7t22j6kg/5.jpg",
+      "year": 2026,
+      "month": 4,
+      "studio": "卡普空04"
+    },
+    {
+      "id": "image-1783845229760.jpg__2026-4",
+      "name": "超级肉肉男孩 3D",
+      "cover": "https://i.ibb.co/Gf89Dfry/3-D.jpg",
+      "year": 2026,
+      "month": 4,
+      "studio": "超级肉肉男孩 3D"
+    },
+    {
+      "id": "image-1783845326593.jpg__2026-4",
+      "name": "幽灵行者2",
+      "cover": "https://i.ibb.co/yBmDqqW1/2.jpg",
+      "year": 2026,
+      "month": 4,
+      "studio": "幽灵行者2"
+    },
+    {
+      "id": "image-1783845379104.jpg__2026-4",
+      "name": "取景器",
+      "cover": "https://i.ibb.co/k20KMTz6/image.jpg",
+      "year": 2026,
+      "month": 4,
+      "studio": "取景器"
+    },
+    {
+      "id": "image-1783845459891.jpg__2026-4",
+      "name": "超合金游侠",
+      "cover": "https://i.ibb.co/BKwcBwMv/image.jpg",
+      "year": 2026,
+      "month": 4,
+      "studio": "超合金游侠"
+    },
+    {
+      "id": "image-1783845525056.jpg__2026-4",
+      "name": "少女与学院城",
+      "cover": "https://i.ibb.co/bj147ppy/image.jpg",
+      "year": 2026,
+      "month": 4,
+      "studio": "少女与学院城"
+    },
+    {
+      "id": "image-1783845596764.jpg__2026-4",
+      "name": "突击间谍",
+      "cover": "https://i.ibb.co/KzmSDSzT/image.jpg",
+      "year": 2026,
+      "month": 4,
+      "studio": "突击间谍"
+    },
+    {
+      "id": "image-1783845596764.jpg__2026-4",
+      "name": "突击间谍",
+      "cover": "https://i.ibb.co/KzmSDSzT/image.jpg",
+      "year": 2026,
+      "month": 5,
+      "studio": "突击间谍"
+    },
+    {
+      "id": "image-303.jpg__2025-10",
+      "name": "BALL x PIT",
+      "cover": "https://i.ibb.co/GvW3xVCv/BALL-x-PIT.jpg",
+      "year": 2026,
+      "month": 5,
+      "studio": "BALL x PIT"
+    },
+    {
+      "id": "image-1783845915369.jpg__2026-5",
+      "name": "厄运之刃",
+      "cover": "https://i.ibb.co/DgMTKt84/image.jpg",
+      "year": 2026,
+      "month": 5,
+      "studio": "厄运之刃"
+    },
+    {
+      "id": "image-65.jpg__2024-1",
+      "name": "苍翼：混沌效应",
+      "cover": "https://i.ibb.co/cSMdcxqq/image.jpg",
+      "year": 2026,
+      "month": 5,
+      "studio": "苍翼：混沌效应"
+    },
+    {
+      "id": "image-1783846042504.jpg__2026-6",
+      "name": "磁带妖怪",
+      "cover": "https://i.ibb.co/ptdQ47C/image.jpg",
+      "year": 2026,
+      "month": 5,
+      "studio": "磁带妖怪"
+    },
+    {
+      "id": "image-95.jpg__2024-3",
+      "name": "怪物猎人：世界",
+      "cover": "https://i.ibb.co/0b8R3Dp/image.jpg",
+      "year": 2026,
+      "month": 5,
+      "studio": "卡普空01"
+    },
+    {
+      "id": "image-1783846099467.jpg__2026-6",
+      "name": "挖掘者米娜",
+      "cover": "https://i.ibb.co/RT6ZfWzw/image.jpg",
+      "year": 2026,
+      "month": 6,
+      "studio": "挖掘者米娜"
+    },
+    {
+      "id": "image-1783846254692.jpg__2026-6",
+      "name": "渎神2DLC",
+      "cover": "https://i.ibb.co/mC1TYNLx/2DLC.jpg",
+      "year": 2026,
+      "month": 6,
+      "studio": "渎神2DLC"
+    },
+    {
+      "id": "image-1783846379597.jpg__2026-6",
+      "name": "Unless",
+      "cover": "https://i.ibb.co/PGW8Qpzn/Unless.jpg",
+      "year": 2026,
+      "month": 6,
+      "studio": "Unless"
+    },
+    {
+      "id": "image-1783846404134.jpg__2026-6",
+      "name": "变废为宝哥布林",
+      "cover": "https://i.ibb.co/jvtp3Gjk/image.jpg",
+      "year": 2026,
+      "month": 6,
+      "studio": "变废为宝哥布林"
+    },
+    {
+      "id": "image-94.jpg__2024-6",
+      "name": "怪物猎人：崛起",
+      "cover": "https://i.ibb.co/tpjVkKFm/image.jpg",
+      "year": 2026,
+      "month": 6,
+      "studio": "卡普空02"
+    },
+    {
+      "id": "image-1783846451450.jpg__2026-6",
+      "name": "炎姬",
+      "cover": "https://i.ibb.co/LhJrrBWX/image.jpg",
+      "year": 2026,
+      "month": 6,
+      "studio": "炎姬"
+    },
+    {
+      "id": "image-94.jpg__2024-6",
+      "name": "怪物猎人：崛起",
+      "cover": "https://i.ibb.co/tpjVkKFm/image.jpg",
+      "year": 2026,
+      "month": 7,
+      "studio": "卡普空02"
+    },
+    {
+      "id": "image-1783846451450.jpg__2026-6",
+      "name": "炎姬",
+      "cover": "https://i.ibb.co/LhJrrBWX/image.jpg",
+      "year": 2026,
+      "month": 7,
+      "studio": "炎姬"
+    },
+    {
+      "id": "image-1783846559503.jpg__2026-7",
+      "name": "星穹遗迹",
+      "cover": "https://i.ibb.co/3mbNHWGr/image.jpg",
+      "year": 2026,
+      "month": 7,
+      "studio": "星穹遗迹"
+    },
+    {
+      "id": "image-1783846591132.jpg__2026-7",
+      "name": "Berry Bury Berry",
+      "cover": "https://i.ibb.co/KcZX4gyg/Berry-Bury-Berry.jpg",
+      "year": 2026,
+      "month": 7,
+      "studio": "Berry Bury Berry"
+    },
+    {
+      "id": "image-268.jpg__2025-4",
+      "name": "热血少女1",
+      "cover": "https://i.ibb.co/XZgr313k/image.jpg",
+      "year": 2026,
+      "month": 7,
+      "studio": "热血少女1"
     }
   ]
 }
