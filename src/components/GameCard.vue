@@ -45,7 +45,7 @@ function onError() {
   border-radius: 8px;
   background: #fff;
   overflow: hidden;
-  max-width: 220px;
+  max-width: 240px;
   width: 100%;
   box-sizing: border-box;          /* border 计入 max-width，避免外扩 */
   min-width: 0;                     /* 允许 grid item 收缩到 0，1fr 不会被子元素内容撑大 */
@@ -68,7 +68,7 @@ function onError() {
   width: 100%;
   max-width: 100%;                  /* 兜底：防止原始尺寸撑大 min-content */
   height: 350px;
-  object-fit: cover;
+  /* object-fit: cover; */
   display: block;
   background: #f0f0f0;
   opacity: 0;
@@ -77,6 +77,10 @@ function onError() {
 @media (max-width: 600px) {
   .game-card img {
     height: 220px;
+  }
+  .game-card:hover {
+    transform: none;
+    box-shadow: none;
   }
 }
 .game-card img.loaded {

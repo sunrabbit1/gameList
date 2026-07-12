@@ -28,8 +28,9 @@ defineProps({
 <style scoped>
 .game-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  column-gap: 16px;                 /* 明确列间隔 16px，不被压缩 */
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  /* column-gap: 16px;                 明确列间隔 16px，不被压缩 */
   row-gap: 16px;                    /* 行间隔 16px */
 }
 .game-grid > * {

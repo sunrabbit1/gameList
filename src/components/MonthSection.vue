@@ -49,7 +49,9 @@ defineProps({
 }
 .month-section .game-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  /* column-gap: 16px;   */
   gap: 16px;
 }
 @media (max-width: 600px) {
