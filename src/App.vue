@@ -7,7 +7,6 @@ import GameGrid from './components/GameGrid.vue';
 import MonthSection from './components/MonthSection.vue';
 import { ElAlert, ElButton } from 'element-plus';
 
-
 // 全局状态
 const activeYear = ref('all');
 const searchQuery = ref('');

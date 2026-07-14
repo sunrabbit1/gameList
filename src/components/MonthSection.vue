@@ -37,7 +37,7 @@ defineProps({
 .month-title .line {
   flex: 1;
   max-width: 200px;
-  height: 1px;
+  height: 3px;
   background: #c0c4cc;
 }
 .month-title .text {
@@ -46,6 +46,11 @@ defineProps({
   color: #303133;
   letter-spacing: 2px;
   flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 4px 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(2px);
 }
 .month-section .game-grid {
   display: grid;

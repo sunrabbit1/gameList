@@ -103,7 +103,7 @@ const submit = async () => {
   try {
     // 3. 上传到 imgBB
     const formData = new FormData()
-    
+
     if (uploadType.value === 'file') {
       formData.append('image', file.value)
     } else {
@@ -123,38 +123,49 @@ const submit = async () => {
     const coverUrl = result.data.url
 
     // 4. 组装游戏对象
-    const now = new Date()
-    const id = `image-${Date.now()}.jpg__${form.value.year || now.getFullYear()}-${form.value.month || (now.getMonth() + 1)}`
-    const newGame = {
-      id,
+    // const now = new Date()
+    // const id = `image-${Date.now()}.jpg__${form.value.year || now.getFullYear()}-${form.value.month || (now.getMonth() + 1)}`
+    // const newGame = {
+    //   id,
+    //   name: form.value.name.trim(),
+    //   cover: coverUrl,
+    //   year: form.value.year || null,
+    //   month: form.value.month || null,
+    //   studio: form.value.studio || form.value.name.trim()
+    // }
+    const gameData = {
       name: form.value.name.trim(),
       cover: coverUrl,
-      year: form.value.year || null,
-      month: form.value.month || null,
       studio: form.value.studio || form.value.name.trim()
-    }
+    };
+    const recordData = {
+      year: form.value.year || null,
+      month: form.value.month || null
+    };
+    const payload = { game: gameData, record: recordData };
 
     // 5. 调用本地 /api/games 写入 public/games.json
     const addRes = await fetch('/api/games', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(newGame)
+      body: JSON.stringify(payload)
     })
     if (!addRes.ok) {
-    let errMsg = `HTTP ${addRes.status}`
-    try {
-        const errData = await addRes.json()
-        if (errData.error) errMsg = errData.error
-    } catch (_) {
-        // 若无法解析JSON，使用状态文本
-        errMsg = `${errMsg} ${addRes.statusText}`
-    }
-    throw new Error(errMsg)
+      let errMsg = `HTTP ${addRes.status}`;
+      try {
+        const errData = await addRes.json();
+        if (errData.error) {
+          errMsg = errData.error;
+        }
+      } catch (_) {
+        errMsg = `${errMsg} ${addRes.statusText}`;
+      }
+      throw new Error(errMsg);
     }
 
     const addResult = await addRes.json()
     if (!addResult.success) {
-    throw new Error(addResult.error || '添加失败')
+      throw new Error(addResult.error || '添加失败')
     }
 
     ElMessage.success('游戏添加成功！')
@@ -172,8 +183,11 @@ const submit = async () => {
     }
     imageUrl.value = ''
     uploadType.value = 'url'   // 重置为默认方式
-    if (reload) reload()
-    else window.location.reload()
+    if (reload) {
+      reload()
+    } else {
+      window.location.reload()
+    }
   } catch (err) {
     ElMessage.error(err.message)
   } finally {
