@@ -208,7 +208,6 @@ const countByYear = computed(() => {
 .count-title {
     text-align: center;
     font-weight: 700;
-    font-size: 24px;
     margin: 24px 0 20px;
     color: #303133;
     letter-spacing: 1px;
