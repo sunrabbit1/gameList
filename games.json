@@ -2159,6 +2159,12 @@
       "name": "热血少女2",
       "cover": "https://i.ibb.co/CpwC3vpj/2.jpg",
       "studio": "热血少女2"
+    },
+    {
+      "id": "game_1785307541413_6ogu",
+      "name": "电车炫客",
+      "cover": "https://i.ibb.co/HfdHJv6K/image.jpg",
+      "studio": "电车炫客"
     }
   ],
   "records": [
@@ -4274,6 +4280,11 @@
     },
     {
       "gameId": "game_360",
+      "year": 2026,
+      "month": 7
+    },
+    {
+      "gameId": "game_1785307541413_6ogu",
       "year": 2026,
       "month": 7
     }
