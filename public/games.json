@@ -2165,6 +2165,24 @@
       "name": "电车炫客",
       "cover": "https://i.ibb.co/HfdHJv6K/image.jpg",
       "studio": "电车炫客"
+    },
+    {
+      "id": "game_1786874107968_uaih",
+      "name": "红眼露比",
+      "cover": "https://i.ibb.co/wF4zNYX5/image.jpg",
+      "studio": "红眼露比"
+    },
+    {
+      "id": "game_1786874249267_pogv",
+      "name": "愚灵",
+      "cover": "https://i.ibb.co/Y4NrsVtt/image.jpg",
+      "studio": "愚灵"
+    },
+    {
+      "id": "game_1786874398100_rlzj",
+      "name": "天堂岛杀手",
+      "cover": "https://i.ibb.co/4Zrw3nCp/image.jpg",
+      "studio": "天堂岛杀手"
     }
   ],
   "records": [
@@ -4287,6 +4305,31 @@
       "gameId": "game_1785307541413_6ogu",
       "year": 2026,
       "month": 7
+    },
+    {
+      "gameId": "game_1785307541413_6ogu",
+      "year": 2026,
+      "month": 8
+    },
+    {
+      "gameId": "game_1786874107968_uaih",
+      "year": 2026,
+      "month": 8
+    },
+    {
+      "gameId": "game_100",
+      "year": 2026,
+      "month": 8
+    },
+    {
+      "gameId": "game_1786874249267_pogv",
+      "year": 2026,
+      "month": 8
+    },
+    {
+      "gameId": "game_1786874398100_rlzj",
+      "year": 2026,
+      "month": 8
     }
   ]
 }
