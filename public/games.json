@@ -2183,6 +2183,18 @@
       "name": "天堂岛杀手",
       "cover": "https://i.ibb.co/4Zrw3nCp/image.jpg",
       "studio": "天堂岛杀手"
+    },
+    {
+      "id": "game_1788011121085_w2qs",
+      "name": "国潮烤冷面传奇",
+      "cover": "https://i.ibb.co/j9RYMbxY/image.jpg",
+      "studio": "国潮烤冷面传奇"
+    },
+    {
+      "id": "game_1788011220819_w8mj",
+      "name": "花园故事",
+      "cover": "https://i.ibb.co/5gBd855j/image.jpg",
+      "studio": "花园故事"
     }
   ],
   "records": [
@@ -4328,6 +4340,16 @@
     },
     {
       "gameId": "game_1786874398100_rlzj",
+      "year": 2026,
+      "month": 8
+    },
+    {
+      "gameId": "game_1788011121085_w2qs",
+      "year": 2026,
+      "month": 8
+    },
+    {
+      "gameId": "game_1788011220819_w8mj",
       "year": 2026,
       "month": 8
     }
