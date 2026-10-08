@@ -2195,6 +2195,48 @@
       "name": "花园故事",
       "cover": "https://i.ibb.co/5gBd855j/image.jpg",
       "studio": "花园故事"
+    },
+    {
+      "id": "game_1791468129062_y04i",
+      "name": "Figment 2",
+      "cover": "https://i.ibb.co/hxw6nXht/Figment-2.jpg",
+      "studio": "Figment"
+    },
+    {
+      "id": "game_1791468263861_orry",
+      "name": "死亡循环",
+      "cover": "https://i.ibb.co/7wyRnYG/image.jpg",
+      "studio": "死亡循环"
+    },
+    {
+      "id": "game_1791468403718_e2i1",
+      "name": "丹达拉：恐惧试炼",
+      "cover": "https://i.ibb.co/FLLHNKF0/image.jpg",
+      "studio": "丹达拉：恐惧试炼"
+    },
+    {
+      "id": "game_1791468476012_weq2",
+      "name": "明末：渊虚之羽",
+      "cover": "https://i.ibb.co/5hh0g5Yq/image.jpg",
+      "studio": "明末：渊虚之羽"
+    },
+    {
+      "id": "game_1791468547582_jjym",
+      "name": "王国保卫战",
+      "cover": "https://i.ibb.co/5g5S9BQt/image.jpg",
+      "studio": "Ironhide Game"
+    },
+    {
+      "id": "game_1791468588952_fwoq",
+      "name": "王国保卫战：前线",
+      "cover": "https://i.ibb.co/S4B8h8K6/image.jpg",
+      "studio": "Ironhide Game"
+    },
+    {
+      "id": "game_1791468689354_zozj",
+      "name": "王国保卫战：起源",
+      "cover": "https://i.ibb.co/9kdm699H/image.jpg",
+      "studio": "Ironhide Game"
     }
   ],
   "records": [
@@ -4352,6 +4394,51 @@
       "gameId": "game_1788011220819_w8mj",
       "year": 2026,
       "month": 8
+    },
+    {
+      "gameId": "game_1791468129062_y04i",
+      "year": 2026,
+      "month": 8
+    },
+    {
+      "gameId": "game_1791468263861_orry",
+      "year": 2026,
+      "month": 9
+    },
+    {
+      "gameId": "game_195",
+      "year": 2026,
+      "month": 9
+    },
+    {
+      "gameId": "game_1791468403718_e2i1",
+      "year": 2026,
+      "month": 9
+    },
+    {
+      "gameId": "game_1791468476012_weq2",
+      "year": 2026,
+      "month": 9
+    },
+    {
+      "gameId": "game_1791468547582_jjym",
+      "year": 2026,
+      "month": 9
+    },
+    {
+      "gameId": "game_1791468588952_fwoq",
+      "year": 2026,
+      "month": 9
+    },
+    {
+      "gameId": "game_1791468588952_fwoq",
+      "year": 2026,
+      "month": 10
+    },
+    {
+      "gameId": "game_1791468689354_zozj",
+      "year": 2026,
+      "month": 10
     }
   ]
 }
